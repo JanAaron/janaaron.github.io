@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=WindSong:wght@400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  background-color: rgb(220, 229, 239);
+  font-family: 'poiret one', sans-serif;
+  color: white;
+
+}
+
+button {
+  font-family: 'poiret one', sans-serif;
+  border: none;
+  color: whitesmoke;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 5%;
+  padding: 0;
+}
+
+.nav-item { 
+  color: white;
+  font-size: 20px;
+  display: inline-block;
+  padding: 5px;
+  transition: all 0.2s ease 0s;
+  text-align: center;
+}
+
+.nav-item:hover {
+  color: wheat;
+}
+
+.title {
+  font-family: windsong, sans-serif;
+  font-size: 30px;
+}
+
+.dropdown-button {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: whitesmoke;
+  display: block;
+  padding: 10px;
+  font-size: 20px;
+  text-decoration: none;
+  background-color: rgba(128, 128, 128, 0.507);
+}
+
+.dropdown-content a:hover {
+  background-color: gray;
+  color: wheat;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.banner {
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin: 0;
+  /* min-height: 1100px; */
+}
+
+@media screen and (max-width: 600px) {
+  .banner {
+    min-height: 1200px;
+  }
+}
+
+.page-banner {
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin: 0;
+  min-height: 400px;
+}
+
+.main-banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/banner-2.jpg");
+}
+
+.gallery-banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/banner-4.jpg");
+}
+
+.book-session-banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/banner-1.jpg");
+}
+
+.book-lesson-banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/banner-3.jpg");
+}
+
+.album-wrapper {
+  position: relative;
+  width: 70%;
+  left: 50%;
+  top: 70%;
+  transform: translate(-50%, -50%);
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.album-wrapper .card {
+  display: inline-block;
+}
+
+.album-photo {
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+  object-fit: cover;
+  border-radius: 20px;
+  opacity: 80%;
+}
+
+.banner-text, .top-banner-text {
+  text-align: center;
+  position: relative;
+  top: 80%;
+  left: 50%;
+  width: 80%;
+  transform: translate(-50%, -50%);
+  color: rgba(255, 255, 255, 0.677);
+  font-family: 'poiret one', sans-serif;
+}
+
+.top-banner-text {
+  top: 10%;
+}
+
+.banner-title {
+  font-family: 'windsong', sans-serif;
+  top: 35%;
+  font-size: 75px;
+}
+
+.banner-text p {
+  font-size: 30px;
+}
+
+.banner-text button {
+  width: 25%;
+  font-size: 20px;
+  padding: 5px 3px;
+  background-color: rgba(210, 189, 151, 0.805);
+  margin-top: 10px;
+}
+
+.section-title {
+  font-size: 40px;
+  text-align: center;
+  padding: 10px;
+  color: gray;
+}
+
+.gallery-album-wrapper {
+  position: relative;
+  width: 70%;
+  margin: auto;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  
+}
+
+.gallery-album-wrapper .card {
+  display: inline-block;
+}
+
+.booking-form {
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  padding: 5% 25%;
+  width: 100%;
+  left: 50%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, .01);
+  text-align: center;
+}
+
+.input-group {
+  position: relative;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 15px 40px;
+  border: 2px solid whitesmoke;
+  border-radius: 8px;
+  outline: none;
+  font-size: 0.95em;
+  transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+  border-color: wheat;
+}
+
+.book-now {
+  width: 100%;
+  padding: 10px;
+  background: wheat;
+  border-radius: 10px;
+  color: gray;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.book-now:hover {
+  background: rgb(205, 186, 151);
+}
+
+footer {
+  width: 100%;
+  /* height: 50px; */
+  text-align: center;
+  border-top: 1vh gray solid;
+  border-bottom: 0.5vh gray solid;
+  color: gray;
+}
+
+.newsletter {
+  margin-bottom: 20px;
+}
+
+.newsletter p {  
+  font-size: 25px;
+  font-weight: 900;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.newsletter input {
+  font-family: 'poiret one', sans-serif;
+  text-align: center;
+  border-radius: 15px;
+  border: none;
+  height: 30px;
+  width: 200px;
+}
+
+.newsletter button {
+  border-radius: 15px;
+  border: none;
+  height: 30px;
+  width: 100px;
+  padding: 5px 3px;
+  background-color: rgba(210, 189, 151, 0.805);
+  left: 50%;
+  cursor: pointer;
+}
+
+.cell {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 20px;
+}
+
+.copyright {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 10px;
+}
